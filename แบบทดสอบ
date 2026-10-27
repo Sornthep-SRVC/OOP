@@ -69,6 +69,24 @@ END
 
 
 
+โจทย์สถานการณ์ที่ 2 : ระบบตรวจสอบการเข้าใช้งาน ( Login System ) รายละอียด ระบบบริหารจัดการร้านค้าต้องการความปลอดภัยจึงต้อมีระบบ login ให้ผู้ใช้ป้อน Username และ Password
+โดยมีเงื่อนไขการตรวจสอบคือ ถ้า Username คือ "admin" และ password คือ "12345" ให้แสดง ข้อความ "Login Success" แต่ถ้าข้อมูลใดข้อมูลนึงไม่ถูกต้องให้แสดงข้อความ "Login Failed"
+
+BEGIN 
+    // เติมคำสั่งให้สมบูรณ์
+    INPUT username
+    INPUT password
+
+    IF username == "admin" AND password == "12345" THEN
+        OUTPUT "Login Success"
+    ELSE
+        OUTPUT "Login Failed"
+    END IF
+END
+
+2.เขียนผังงานFlowchart 
+
+
 
 
 ตอนที่ 3 การประเมินตนเองและการทำงานเป็นทีม (สะท้อนคิด)
